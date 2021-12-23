@@ -12,6 +12,9 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CrudComponent } from './crud/crud.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { GalleryComponent } from './gallery/gallery.component';
     HomeComponent,
     LoginComponent,
     AboutComponent,
-    GalleryComponent
+    GalleryComponent,
+    DashboardComponent,
+    CrudComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
