@@ -1,1 +1,26 @@
-<p>login works!</p>
+<h1>Login</h1>
+<form #loginForm="ngForm">
+  <div class="form-group">
+    <label for="username">username</label>
+    <input
+      id="username"
+      name="username"
+      type="text"
+      required
+      [(ngModel)]="loginData.username"
+    />
+  </div>
+  <div class="form-group">
+    <label for="password">password</label>
+    <input
+      id="password"
+      name="password"
+      type="password"
+      required
+      minlength="6"
+      [(ngModel)]="loginData.password"
+    />
+  </div>
+  <button [disabled]="loginForm.invalid" (click)="submitForm()">Login</button>
+  {{ loginData | json }}
+</form>
