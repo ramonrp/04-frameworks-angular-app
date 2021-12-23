@@ -1,0 +1,4 @@
+<div>
+  <app-menu-public *ngIf="!this.auth.isLogged()"></app-menu-public>
+  <app-menu-private *ngIf="this.auth.isLogged()"></app-menu-private>
+</div>
