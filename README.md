@@ -33,3 +33,5 @@ ng serve
 - Pipes: How to create them and its utility.
 - Services: How to create a global state, get info from API and inyect this services to other services or components.
 - Forms: Learned about two differents forms in Angular (template and reactives)
+- Use some component of Material UI in Angular.
+- rxJS library and observables.
