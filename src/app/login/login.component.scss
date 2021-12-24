@@ -2,17 +2,21 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  gap: 4px;
 }
 
-.ng-valid[required],
+.ng-touched.ng-valid[required],
 .ng-valid.required {
   border: 1px solid #42a948;
 }
 
-.ng-invalid:not(form) {
+.ng-touched.ng-invalid:not(form) {
   border: 1px solid #a94442;
 }
 
 input:focus {
   outline-offset: 4px;
+}
+[role="alert"] {
+  color: #a94442;
 }
