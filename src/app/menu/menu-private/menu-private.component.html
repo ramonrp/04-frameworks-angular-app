@@ -5,4 +5,6 @@
     <li><a routerLink="/crud">CRUD</a></li>
     <li><a routerLink="/profile">Profile</a></li>
   </ul>
+  <p class="loggedUser">Hola, {{ loggedUser }}</p>
+  <button (click)="logout()">Logout</button>
 </nav>

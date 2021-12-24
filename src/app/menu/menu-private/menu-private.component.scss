@@ -11,3 +11,13 @@ a {
     text-decoration: underline;
   }
 }
+
+nav {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.loggedUser {
+  margin-left: auto;
+}
