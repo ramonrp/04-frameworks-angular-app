@@ -7,6 +7,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #337ab7;
   &:hover {
     text-decoration: underline;
   }
@@ -20,4 +21,7 @@ nav {
 
 .loggedUser {
   margin-left: auto;
+}
+.selected {
+  color: #87cefa;
 }
