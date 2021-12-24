@@ -3,6 +3,7 @@
 ## Motivation
 
 This is the project related to Angular framework from master frontend from Lemoncode that I'm doing right now.
+Although I've been learning React for the last two months, It's great to work with a different frameworks to see pros/cons of each one.
 
 ## First Steps
 
@@ -21,8 +22,6 @@ ng serve
 ```
 
 ## Learnings
-
-Last two month I've been learning React. This is the first time I use a different framework, so lot of learnings:
 
 - Angular itself is a framework and give you a lot of tools out of the box to develop SPAs: forms, routing...
 - How Angular works: not virual DOM, automatic detection for changes in some circunstances, components based in MVC architecture...
