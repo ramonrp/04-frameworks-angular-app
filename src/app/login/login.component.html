@@ -1,4 +1,8 @@
 <h1>Login</h1>
+<div class="card">
+  <p>username: ramon@masterlemoncode.net</p>
+  <p>password: 12345678</p>
+</div>
 <form #loginForm="ngForm">
   <div class="form-group">
     <label for="username">username</label>
@@ -37,8 +41,15 @@
       </div>
     </div>
   </div>
-  <button [disabled]="loginForm.invalid" (click)="submitForm()">Login</button>
-  <div role="alert" *ngIf="showIncorrectLogin">
+  <button
+    mat-button
+    color="primary"
+    [disabled]="loginForm.invalid"
+    (click)="submitForm()"
+  >
+    Login
+  </button>
+  <div class="card" role="alert" *ngIf="showIncorrectLogin">
     El usuario / contraseña no son válidos
   </div>
 </form>
