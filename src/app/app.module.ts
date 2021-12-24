@@ -16,6 +16,7 @@ import { CrudComponent } from './crud/crud.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HeaderComponent } from './header/header.component';
 import { RotateDirective } from './directives/rotate.directive';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { RotateDirective } from './directives/rotate.directive';
     ProfileComponent,
     HeaderComponent,
     RotateDirective,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
