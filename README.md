@@ -1,27 +1,36 @@
-# App
+# App Layout Angular
+
+## Motivation
+
+This is the project related to Angular framework from master frontend from Lemoncode that I'm doing right now.
+
+## First Steps
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
 
-## Development server
+To install dependencies you need to execute
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```
+npm install
+```
 
-## Code scaffolding
+To start development server you need to execute and navigate to `http://localhost:4200/`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+ng serve
+```
 
-## Build
+## Learnings
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Last two month I've been learning React. This is the first time I use a different framework, so lot of learnings:
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Angular itself is a framework and give you a lot of tools out of the box to develop SPAs: forms, routing...
+- How Angular works: not virual DOM, automatic detection for changes in some circunstances, components based in MVC architecture...
+- Start an Angular project with CLI
+- Create components. Different parts of each component.
+- How to style: components and global styles.
+- Built-in directives: ngFor, ngIf, ngSwitch.
+- Attribute Directives: how to create them and why they are useful.
+- Pipes: How to create them and its utility.
+- Services: How to create a global state, get info from API and inyect this services to other services or components.
+- Forms: Learned about two differents forms in Angular (template and reactives)
