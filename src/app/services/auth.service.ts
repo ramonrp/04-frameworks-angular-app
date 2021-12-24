@@ -6,7 +6,12 @@ import { LoginEntity } from '../model/LoginEntity';
 export class AuthService {
   loggedUser: string;
   constructor() {
-    this.loggedUser = '';
+    const savedUserName = window.localStorage.getItem('username');
+    if (savedUserName) {
+      this.loggedUser = savedUserName;
+    } else {
+      this.loggedUser = '';
+    }
   }
 
   login(loginData: LoginEntity): boolean {
@@ -14,6 +19,7 @@ export class AuthService {
     const correctUsername = 'ramon@masterlemoncode.net' === username;
     const correctPassWord = '12345678' === password;
     if (correctUsername && correctPassWord) {
+      window.localStorage.setItem('username', username);
       this.loggedUser = username;
       return true;
     }
@@ -22,6 +28,7 @@ export class AuthService {
 
   logout(): void {
     this.loggedUser = '';
+    window.localStorage.removeItem('username');
   }
   isLogged(): boolean {
     if (this.loggedUser === '') return false;
