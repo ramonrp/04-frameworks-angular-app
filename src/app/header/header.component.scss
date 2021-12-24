@@ -1,0 +1,17 @@
+nav {
+  color: #337ab7;
+}
+
+.wrapper {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.logo-wrapper {
+  width: 32px;
+}
+
+app-menu-private {
+  flex: 1;
+}
