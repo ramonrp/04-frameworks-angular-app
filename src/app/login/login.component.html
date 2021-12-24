@@ -38,4 +38,7 @@
     </div>
   </div>
   <button [disabled]="loginForm.invalid" (click)="submitForm()">Login</button>
+  <div role="alert" *ngIf="showIncorrectLogin">
+    El usuario / contraseña no son válidos
+  </div>
 </form>

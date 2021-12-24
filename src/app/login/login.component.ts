@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   loginData: LoginEntity;
+  showIncorrectLogin: boolean = false;
   constructor(private auth: AuthService, private router: Router) {
     this.loginData = {
       username: '',
@@ -19,6 +20,8 @@ export class LoginComponent implements OnInit {
     const correctLogin = this.auth.login(this.loginData);
     if (correctLogin) {
       this.router.navigate(['/dashboard']);
+    } else {
+      this.showIncorrectLogin = true;
     }
   }
   ngOnInit(): void {}
