@@ -1,10 +1,12 @@
 <nav>
   <ul>
-    <li><a routerLink="/dashboard">Dashboard</a></li>
-    <li><a routerLink="/gallery">Gallery</a></li>
-    <li><a routerLink="/crud">CRUD</a></li>
-    <li><a routerLink="/profile">Profile</a></li>
+    <li>
+      <a routerLink="/dashboard" routerLinkActive="selected">Dashboard</a>
+    </li>
+    <li><a routerLink="/gallery" routerLinkActive="selected">Gallery</a></li>
+    <li><a routerLink="/crud" routerLinkActive="selected">CRUD</a></li>
+    <li><a routerLink="/profile" routerLinkActive="selected">Profile</a></li>
   </ul>
   <p class="loggedUser">Hola, {{ loggedUser }}</p>
-  <button (click)="logout()">Logout</button>
+  <button mat-button color="primary" (click)="logout()">Logout</button>
 </nav>
