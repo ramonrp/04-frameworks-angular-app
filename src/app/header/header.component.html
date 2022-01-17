@@ -2,6 +2,6 @@
   <div class="logo-wrapper">
     <img src="../../assets/img/letter-r.png" rotate="-150" step="50" />
   </div>
-  <app-menu-public *ngIf="!this.auth.isLogged()"></app-menu-public>
-  <app-menu-private *ngIf="this.auth.isLogged()"></app-menu-private>
+  <app-menu-public *ngIf="!isLogged"></app-menu-public>
+  <app-menu-private *ngIf="isLogged"></app-menu-private>
 </div>

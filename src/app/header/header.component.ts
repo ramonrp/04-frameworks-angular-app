@@ -7,7 +7,11 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  constructor(public auth: AuthService) {}
+  isLogged: boolean = false;
+  constructor(private auth: AuthService) {}
 
   ngOnInit(): void {}
+  ngDoCheck(): void {
+    this.isLogged = this.auth.isLogged();
+  }
 }
